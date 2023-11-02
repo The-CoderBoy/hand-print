@@ -1,0 +1,19 @@
+.nav {
+  width: 100%;
+  height: 50px;
+  background-color: #dcd3a7;
+}
+
+.logo {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  top: -20px;
+  margin-left: 80px;
+  background-color: #fffbe7;
+  width: 130px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px #dcd3a7;
+}
