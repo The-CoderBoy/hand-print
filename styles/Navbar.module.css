@@ -2,6 +2,8 @@
   width: 100%;
   height: 50px;
   background-color: #dcd3a7;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo {
@@ -9,11 +11,127 @@
   padding-top: 15px;
   padding-bottom: 5px;
   top: -20px;
-  margin-left: 80px;
   background-color: #fffbe7;
   width: 130px;
   height: 100px;
   text-align: center;
   border-radius: 50%;
   box-shadow: inset 0px 0px 10px #dcd3a7;
+}
+
+.contents {
+  margin-top: 8px;
+  width: 60%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fffbe7;
+  border: solid 0.5px #89750294;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.582);
+}
+
+.link {
+  text-decoration: none;
+  color: #8e7800;
+  font-size: 15px;
+}
+
+.navM {
+  height: 30px;
+  padding: 20px;
+  background-color: #dcd3a7;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.445);
+}
+
+.menu {
+  height: 210px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcd3a7;
+  border-top: solid 3px #89750294;
+  border-bottom: solid 3px #89750294;
+  animation: expandHeight 1s ease forwards;
+}
+
+@keyframes expandHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 210px;
+  }
+}
+
+.card {
+  padding: 5px;
+  background-color: #fffbe7;
+  width: 60%;
+  height: 180px;
+  border: solid 0.5px #89750294;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+  animation: expandHeightM 1s ease forwards;
+}
+
+@keyframes expandHeightM {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.rotate {
+  animation: spin 1s linear;
+}
+
+.close {
+  animation: spinC 1s linear;
+}
+
+@keyframes spin {
+  50% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spinC {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(-180deg);
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+  .navM {
+    display: flex;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu {
+    display: none;
+  }
 }
