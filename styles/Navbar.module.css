@@ -57,7 +57,10 @@
   background-color: #dcd3a7;
   border-top: solid 3px #89750294;
   border-bottom: solid 3px #89750294;
-  animation: expandHeight 1s ease forwards;
+}
+
+.menuExpend {
+  animation: expandHeight 0.5s ease forwards;
 }
 
 @keyframes expandHeight {
@@ -69,6 +72,19 @@
   }
 }
 
+.menuCollaps {
+  animation: collapsHeight 0.5s ease forwards;
+}
+
+@keyframes collapsHeight {
+  from {
+    height: 210px;
+  }
+  to {
+    height: 0px;
+  }
+}
+
 .card {
   padding: 5px;
   background-color: #fffbe7;
@@ -77,7 +93,10 @@
   border: solid 0.5px #89750294;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
-  animation: expandHeightM 1s ease forwards;
+}
+
+.cardExpend {
+  animation: expandHeightM 0.5s ease forwards;
 }
 
 @keyframes expandHeightM {
@@ -89,31 +108,72 @@
   }
 }
 
-.rotate {
-  animation: spin 1s linear;
+.cardCollaps {
+  animation: collapsHeightM 0.5s ease forwards;
 }
 
-.close {
-  animation: spinC 1s linear;
+@keyframes collapsHeightM {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+.rotate {
+  animation: spin 0.5s linear;
 }
 
 @keyframes spin {
-  50% {
-    transform: rotate(360deg);
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(180deg);
     opacity: 0;
   }
+}
+
+.rotateR {
+  animation: spinR 0.5s linear;
+}
+
+@keyframes spinR {
+  0% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.close {
+  animation: spinC 0.5s linear;
 }
 
 @keyframes spinC {
   0% {
     opacity: 0;
   }
-  50% {
-    transform: rotate(-180deg);
-    opacity: 0.5;
+  100% {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+}
+
+.closeR {
+  animation: spinCR 0.5s linear;
+}
+
+@keyframes spinCR {
+  0% {
+    transform: rotate(180deg);
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 

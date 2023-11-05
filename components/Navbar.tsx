@@ -7,11 +7,49 @@ import { useState } from "react";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
+  const [animation, setAnimation] = useState({
+    Hemberger: "",
+    Close: "",
+    menu: style.menuExpend,
+    card: style.cardExpend,
+  });
 
   const menuHandler = () => {
     setTimeout(() => {
       setMenu(!menu);
-    }, 500);
+    }, 250);
+
+    if (!menu) {
+      setAnimation({
+        Hemberger: style.rotate,
+        Close: style.close,
+        menu: style.menuExpend,
+        card: style.cardExpend,
+      });
+      setTimeout(() => {
+        setAnimation({
+          Hemberger: "",
+          Close: "",
+          menu: style.menuExpend,
+          card: style.cardExpend,
+        });
+      }, 1000);
+    } else {
+      setAnimation({
+        Hemberger: style.rotateR,
+        Close: style.closeR,
+        menu: style.menuCollaps,
+        card: style.cardCollaps,
+      });
+      setTimeout(() => {
+        setAnimation({
+          Hemberger: "",
+          Close: "",
+          menu: style.menuExpend,
+          card: style.cardExpend,
+        });
+      }, 1000);
+    }
   };
 
   return (
@@ -57,7 +95,7 @@ function Navbar() {
             width={45}
             height={35}
             onClick={menuHandler}
-            className={style.rotate}
+            className={animation.Hemberger}
           ></Image>
         ) : (
           <Image
@@ -66,13 +104,13 @@ function Navbar() {
             width={32}
             height={36}
             onClick={menuHandler}
-            className={style.close}
+            className={animation.Close}
           ></Image>
         )}
       </div>
       {menu && (
-        <div className={`${style.menu} ${kadwa.className}`}>
-          <div className={style.card}>
+        <div className={`${style.menu} ${kadwa.className} ${animation.menu}`}>
+          <div className={`${style.card} ${animation.card}`}>
             <Link className={style.link} href="#">
               Home
             </Link>
