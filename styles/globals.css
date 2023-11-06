@@ -1,5 +1,17 @@
-body{
+body {
   margin: 0px;
   padding: 0px;
-  background-color: #FFFBE7;
+  background-color: #fffbe7;
+}
+
+.container {
+  margin: auto;
+  margin-top: 10px;
+  width: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
 }
