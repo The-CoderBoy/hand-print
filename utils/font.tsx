@@ -1,4 +1,4 @@
-import { Kadwa, Grenze } from "next/font/google";
+import { Kadwa, Grenze, Inter } from "next/font/google";
 
 const kadwa = Kadwa({
   weight: ["400", "700"],
@@ -12,4 +12,9 @@ const grenze = Grenze({
   subsets: ["latin"],
 });
 
-export { kadwa, grenze };
+const inter = Inter({
+  weight: ["400", "700", "100", "200", "300", "500", "600", "800", "900"],
+  subsets: ["latin"],
+});
+
+export { kadwa, grenze, inter };

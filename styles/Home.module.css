@@ -83,6 +83,24 @@
   border-radius: 10px;
 }
 
+.cardDiv {
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.workShop {
+  margin: auto;
+  margin-top: 5px;
+  width: 80%;
+  color: #897402;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 1170px) {
   .img {
     margin-top: 40px;
@@ -95,6 +113,12 @@
   .intro {
     margin-top: 55px;
     width: 80%;
+  }
+  .cardDiv {
+    justify-content: center;
+  }
+  .workShop {
+    width: 90%;
   }
 }
 
@@ -111,6 +135,9 @@
   .intro {
     margin-top: 25px;
     width: 90%;
+  }
+  .workShop {
+    width: 100%;
   }
 }
 
@@ -143,5 +170,8 @@
     font-size: 17.5px;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  .workShop{
+    font-size: 13px;
   }
 }
