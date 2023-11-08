@@ -56,12 +56,12 @@ function Navbar() {
     <>
       <div className={style.nav}>
         <div className={style.logo}>
-          <Image
+          <img
             width={100}
             height={80}
             src="/image/Govind Hand Print.png"
             alt="Govind hand print akola chittorgarh rajasthan"
-          ></Image>
+          />
         </div>
         <div className={`${style.contents} ${kadwa.className}`}>
           <Link className={style.link} href="#">
