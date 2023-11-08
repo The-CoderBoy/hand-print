@@ -61,7 +61,7 @@ function Navbar() {
             height={80}
             src="/image/Govind Hand Print.png"
             alt="Govind hand print akola chittorgarh rajasthan"
-          />
+          ></Image>
         </div>
         <div className={`${style.contents} ${kadwa.className}`}>
           <Link className={style.link} href="#">
