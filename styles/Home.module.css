@@ -101,6 +101,22 @@
   font-size: 20px;
 }
 
+.footCard {
+  margin-top: 15px;
+  background-color: #544600f1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footP {
+  margin: auto;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  width: 65%;
+ 
+}
+
 @media screen and (max-width: 1170px) {
   .img {
     margin-top: 40px;
@@ -171,7 +187,11 @@
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .workShop{
+  .workShop {
     font-size: 13px;
+  }
+  .footP {
+    width: 85%;
+    font-size: 11px;
   }
 }

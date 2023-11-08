@@ -4,8 +4,16 @@ import { kadwa, grenze } from "@/utils/font";
 import Heading from "@/components/Heading";
 import ProductCard from "@/components/ProductCard";
 import ImgComp from "@/components/ImgComp";
+import Footer from "@/components/Footer";
 
 const cardData = [
+  {
+    url: "/image/runningFabric.jpg",
+    alt: "dabu print running frabric",
+    cardColor: "#673c7cab",
+    textColor: "#EBB5FF",
+    text: "Runnig Fabric",
+  },
   {
     url: "/image/Dabu saree.jpeg",
     alt: "dabu print saree",
@@ -38,6 +46,14 @@ const workImgData = [
     src: "/image/workshop2.jpg",
     alt: "govind hand print akola rajasthan",
   },
+  {
+    src: "/image/workshop3.jpg",
+    alt: "govind hand print akola rajasthan",
+  },
+  {
+    src: "/image/workshop4.jpg",
+    alt: "govind hand print akola rajasthan",
+  },
 ];
 
 function index() {
@@ -62,7 +78,7 @@ function index() {
           />
           <div className={style.card}>
             <div className={`${kadwa.className} ${style.divHead}`}>
-              <span className={style.p}>Three generation dedicated to</span>
+              <span className={style.p}>Four Generations Dedicated To</span>
               <br />
               <span className={style.headP}>Dabu Print</span>
             </div>
@@ -71,8 +87,8 @@ function index() {
 
         <div className={`${grenze.className} ${style.intro}`}>
           We specialize in the intricate craft of Dabu printing, a traditional
-          art that has been passed down through three generations within our
-          family. Our reputation is built on the foundation of exceptional
+          art that has been passed down through generation to generation within
+          our family. Our reputation is built on the foundation of exceptional
           product quality and a wide range of diverse and intricate designs.
         </div>
 
@@ -110,6 +126,15 @@ function index() {
           })}
         </div>
       </div>
+      <div className={`${kadwa.className} ${style.footCard}`}>
+        <div className={style.footP}>
+          We have expertise in printing on various fabrics. We work on both job
+          offers and ready-made fabrics. We sell our products all over the
+          world. Customer satisfaction is our highest priority.
+          <hr />
+        </div>
+      </div>
+      <Footer />
     </>
   );
 }
