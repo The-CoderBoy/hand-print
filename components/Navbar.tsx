@@ -81,7 +81,7 @@ function Navbar() {
           <Link className={style.link} href="/aboutUs">
             About Us
           </Link>
-          <Link className={style.link} href="/contactUs">
+          <Link className={style.link} href="/ContactUs">
             Contact Us
           </Link>
         </div>
@@ -160,7 +160,7 @@ function Navbar() {
             <br />
             <Link
               className={style.link}
-              href="/contactUs"
+              href="/ContactUs"
               onClick={() => setMenu(false)}
             >
               Contact Us

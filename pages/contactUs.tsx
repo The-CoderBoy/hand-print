@@ -1,9 +1,9 @@
 import Heading from "@/components/Heading";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import style from "@/styles/ContactUs.module.css";
 import { kadwa } from "@/utils/font";
 
-function contactUs() {
+function ContactUs() {
   const [height, setHeight] = useState("");
   useEffect(() => {
     console.log(window.innerHeight);
@@ -58,4 +58,4 @@ function contactUs() {
   );
 }
 
-export default contactUs;
+export default ContactUs;

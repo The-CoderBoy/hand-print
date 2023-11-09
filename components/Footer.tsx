@@ -90,7 +90,7 @@ function Footer() {
         <Lik href="/education">Education</Lik>
         <Lik href="#">Awards</Lik>
         <Lik href="/aboutUs">About Us</Lik>
-        <Lik href="/contactUs">Contact Us</Lik>
+        <Lik href="/ContactUs">Contact Us</Lik>
       </Div3>
     </MainDiv>
   );
