@@ -4,7 +4,6 @@ import { kadwa, grenze } from "@/utils/font";
 import Heading from "@/components/Heading";
 import ProductCard from "@/components/ProductCard";
 import ImgComp from "@/components/ImgComp";
-import Footer from "@/components/Footer";
 
 const cardData = [
   {
@@ -134,7 +133,6 @@ function index() {
           <hr />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

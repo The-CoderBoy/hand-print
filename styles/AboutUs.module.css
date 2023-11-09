@@ -1,0 +1,54 @@
+.contaner {
+  margin: auto;
+  width: 80%;
+  margin-top: 15px;
+}
+
+.img {
+  margin: auto;
+  width: 80%;
+  height: 200px;
+}
+
+.fade {
+  margin: auto;
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  background: linear-gradient(#ffffff48, #fffbe7 80%);
+  left: 0;
+  right: 0;
+  top: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.para {
+  margin: auto;
+  margin-top: 15px;
+  width: 80%;
+  color: #907b0f;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1170px) {
+  .contaner {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contaner {
+    margin-top: 15px;
+  }
+  .img {
+    width: 100%;
+  }
+  .fade {
+    width: 100%;
+  }
+  .para {
+    width: 100%;
+    font-size: 15px;
+  }
+}

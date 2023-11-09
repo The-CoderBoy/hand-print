@@ -56,38 +56,45 @@ function Navbar() {
     <>
       <div className={style.nav}>
         <div className={style.logo}>
-          <img
-            width={100}
-            height={80}
-            src="/image/Govind Hand Print.png"
-            alt="Govind hand print akola chittorgarh rajasthan"
-          />
+          <Link href="/">
+            <img
+              width={100}
+              height={80}
+              src="/image/Govind Hand Print.png"
+              alt="Govind hand print akola chittorgarh rajasthan"
+            />
+          </Link>
         </div>
         <div className={`${style.contents} ${kadwa.className}`}>
-          <Link className={style.link} href="#">
+          <Link className={style.link} href="/">
             Home
           </Link>
           <Link className={style.link} href="#">
             Image Gallary
           </Link>
-          <Link className={style.link} href="#">
+          <Link className={style.link} href="/education">
             Education
           </Link>
           <Link className={style.link} href="#">
             Awards
           </Link>
-          <Link className={style.link} href="#">
+          <Link className={style.link} href="/aboutUs">
+            About Us
+          </Link>
+          <Link className={style.link} href="/contactUs">
             Contact Us
           </Link>
         </div>
       </div>
       <div className={style.navM}>
-        <Image
-          src="/image/Home icon.svg"
-          alt="Home"
-          width={50}
-          height={40}
-        ></Image>
+        <Link href="/">
+          <Image
+            src="/image/Home icon.svg"
+            alt="Home"
+            width={50}
+            height={40}
+          ></Image>
+        </Link>
         {!menu ? (
           <Image
             src="/image/Hemberger.svg"
@@ -111,23 +118,51 @@ function Navbar() {
       {menu && (
         <div className={`${style.menu} ${kadwa.className} ${animation.menu}`}>
           <div className={`${style.card} ${animation.card}`}>
-            <Link className={style.link} href="#">
+            <Link
+              className={style.link}
+              href="/"
+              onClick={() => setMenu(false)}
+            >
               Home
             </Link>
             <br />
-            <Link className={style.link} href="#">
+            <Link
+              className={style.link}
+              href="#"
+              onClick={() => setMenu(false)}
+            >
               Image Gallary
             </Link>
             <br />
-            <Link className={style.link} href="#">
+            <Link
+              className={style.link}
+              href="/education"
+              onClick={() => setMenu(false)}
+            >
               Education
             </Link>
             <br />
-            <Link className={style.link} href="#">
+            <Link
+              className={style.link}
+              href="#"
+              onClick={() => setMenu(false)}
+            >
               Awards
             </Link>
             <br />
-            <Link className={style.link} href="#">
+            <Link
+              className={style.link}
+              href="/aboutUs"
+              onClick={() => setMenu(false)}
+            >
+              About Us
+            </Link>
+            <br />
+            <Link
+              className={style.link}
+              href="/contactUs"
+              onClick={() => setMenu(false)}
+            >
               Contact Us
             </Link>
             <br />

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { kadwa } from "@/utils/font";
 import { BsWhatsapp, BsFacebook, BsInstagram } from "react-icons/bs";
+import Link from "next/link";
 
 const MainDiv = styled.div`
   background-color: #544600f1;
@@ -26,6 +27,19 @@ const Div2 = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+`;
+
+const Div3 = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  text-align: center;
+`;
+
+const Lik = styled(Link)`
+  text-decoration: none;
+  color: #ddd3a0;
+  font-size: 15px;
 `;
 
 function Footer() {
@@ -71,6 +85,13 @@ function Footer() {
         <BsFacebook />
         <BsInstagram />
       </Div2>
+      <Div3>
+        <Lik href="#">Image Gallary</Lik>
+        <Lik href="/education">Education</Lik>
+        <Lik href="#">Awards</Lik>
+        <Lik href="/aboutUs">About Us</Lik>
+        <Lik href="/contactUs">Contact Us</Lik>
+      </Div3>
     </MainDiv>
   );
 }
