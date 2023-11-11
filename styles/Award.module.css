@@ -1,0 +1,34 @@
+.contaner {
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  color: #003968;
+}
+
+.para {
+  margin: auto;
+  width: 80%;
+  margin-top: 10px;
+  color: #907b0f;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1180px) {
+  .contaner {
+    margin-top: 50px;
+    width: 90%;
+  }
+  .para {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contaner {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .para {
+    width: 100%;
+  }
+}

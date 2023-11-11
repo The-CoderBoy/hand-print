@@ -69,13 +69,13 @@ function Navbar() {
           <Link className={style.link} href="/">
             Home
           </Link>
-          <Link className={style.link} href="#">
+          <Link className={style.link} href="/ImageGallary">
             Image Gallary
           </Link>
           <Link className={style.link} href="/education">
             Education
           </Link>
-          <Link className={style.link} href="#">
+          <Link className={style.link} href="/Awards">
             Awards
           </Link>
           <Link className={style.link} href="/aboutUs">
@@ -128,7 +128,7 @@ function Navbar() {
             <br />
             <Link
               className={style.link}
-              href="#"
+              href="/ImageGallary"
               onClick={() => setMenu(false)}
             >
               Image Gallary
@@ -144,7 +144,7 @@ function Navbar() {
             <br />
             <Link
               className={style.link}
-              href="#"
+              href="/Awards"
               onClick={() => setMenu(false)}
             >
               Awards

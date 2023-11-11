@@ -48,6 +48,8 @@ const Card = styled.div`
 `;
 
 const P = styled.p`
+  margin: auto;
+  width: 300px;
   position: absolute;
   text-align: center;
   font-size: 60px;
@@ -56,7 +58,6 @@ const P = styled.p`
   top: 50%;
   left: 0;
   right: 0;
-  margin: 0px;
   transform: translateY(-50%);
   @media (max-width: 700px) {
     font-size: 40px;

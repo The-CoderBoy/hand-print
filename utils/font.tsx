@@ -1,4 +1,4 @@
-import { Kadwa, Grenze, Inter } from "next/font/google";
+import { Kadwa, Grenze, Inter, Almendra } from "next/font/google";
 
 const kadwa = Kadwa({
   weight: ["400", "700"],
@@ -17,4 +17,9 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export { kadwa, grenze, inter };
+const almendra = Almendra({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
+export { kadwa, grenze, inter, almendra };

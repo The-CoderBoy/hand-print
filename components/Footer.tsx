@@ -58,6 +58,17 @@ function Footer() {
           >
             +91-9571306863
           </a>
+          ,
+          <a
+            style={{
+              textDecoration: "none",
+              color: "#DDD3A0",
+              marginLeft: "5px",
+            }}
+            href="tel:+91-9929173370"
+          >
+            +91-9929173370
+          </a>
         </div>
         <div>
           Email:- <br />{" "}
@@ -81,14 +92,29 @@ function Footer() {
         </div>
       </Div1>
       <Div2>
-        <BsWhatsapp />
-        <BsFacebook />
-        <BsInstagram />
+        <a
+          style={{ color: "#ddd3a0", marginTop: "-12px" }}
+          href="https://wa.me/+919571306863"
+        >
+          <BsWhatsapp />
+        </a>
+        <a
+          style={{ color: "#ddd3a0", marginTop: "-12px" }}
+          href="https://m.facebook.com/profile.php?id=100054877175179&v=info&funlid=7ysiefpw3kiCcemw"
+        >
+          <BsFacebook />
+        </a>
+        <a
+          style={{ color: "#ddd3a0", marginTop: "-12px" }}
+          href="https://instagram.com/govindhandprints?igshid=NTFqd2toNDFmY3Zz"
+        >
+          <BsInstagram />
+        </a>
       </Div2>
       <Div3>
-        <Lik href="#">Image Gallary</Lik>
+        <Lik href="/ImageGallary">Image Gallary</Lik>
         <Lik href="/education">Education</Lik>
-        <Lik href="#">Awards</Lik>
+        <Lik href="/Awards">Awards</Lik>
         <Lik href="/aboutUs">About Us</Lik>
         <Lik href="/ContactUs">Contact Us</Lik>
       </Div3>

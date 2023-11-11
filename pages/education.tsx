@@ -82,7 +82,17 @@ function education() {
         knowledge to passionate people who can keep this art alive by teaching
         it.We periodically conduct workshops for teaching dadu print to people
         around the world. To book a slot in the work shop or for any query,
-        please feel free to <Link href="#">Contact Us</Link>
+        please feel free to{" "}
+        <Link
+          style={{
+            textDecoration: "none",
+            fontWeight: "700",
+            color: "#897402",
+          }}
+          href="/ContactUs"
+        >
+          Contact Us
+        </Link>
       </div>
 
       <div className={style.imgDiv}>
@@ -104,9 +114,11 @@ function education() {
           marginBottom: "15px",
         }}
       >
-        <button className={`${kadwa.className} ${style.btn}`}>
-          Contact Us to Learn
-        </button>
+        <Link href="/ContactUs">
+          <button className={`${kadwa.className} ${style.btn}`}>
+            Contact Us to Learn
+          </button>
+        </Link>
       </div>
     </div>
   );

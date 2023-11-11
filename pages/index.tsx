@@ -4,9 +4,11 @@ import { kadwa, grenze } from "@/utils/font";
 import Heading from "@/components/Heading";
 import ProductCard from "@/components/ProductCard";
 import ImgComp from "@/components/ImgComp";
+import Link from "next/link";
 
 const cardData = [
   {
+    link: "runningFabric",
     url: "/image/runningFabric.jpg",
     alt: "dabu print running frabric",
     cardColor: "#673c7cab",
@@ -14,6 +16,7 @@ const cardData = [
     text: "Runnig Fabric",
   },
   {
+    link: "saree",
     url: "/image/Dabu saree.jpeg",
     alt: "dabu print saree",
     cardColor: "#1b204481",
@@ -21,6 +24,7 @@ const cardData = [
     text: "Saree",
   },
   {
+    link: "bedsheet",
     url: "/image/bedsheet.png",
     alt: "dabu print bedsheet",
     cardColor: "#1e77838a",
@@ -28,11 +32,12 @@ const cardData = [
     text: "Bedsheet",
   },
   {
+    link: "salwarSuit",
     url: "/image/slwarsuit.jpg",
     alt: "dabu print slwarsuit",
     cardColor: "#72403db7",
     textColor: "#EA5442",
-    text: "Slwar Suit",
+    text: "Salwar Suit",
   },
 ];
 
@@ -97,13 +102,15 @@ function index() {
           {cardData.map((x, i) => {
             return (
               <div key={i}>
-                <ProductCard
-                  url={x.url}
-                  alt={x.alt}
-                  cardColor={x.cardColor}
-                  textColor={x.textColor}
-                  text={x.text}
-                />
+                <Link href={`/ImageGallary#${x.link}`}>
+                  <ProductCard
+                    url={x.url}
+                    alt={x.alt}
+                    cardColor={x.cardColor}
+                    textColor={x.textColor}
+                    text={x.text}
+                  />
+                </Link>
               </div>
             );
           })}
