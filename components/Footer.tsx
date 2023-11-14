@@ -115,7 +115,7 @@ function Footer() {
         <Lik href="/ImageGallary">Image Gallary</Lik>
         <Lik href="/education">Education</Lik>
         <Lik href="/Awards">Awards</Lik>
-        <Lik href="/aboutUs">About Us</Lik>
+        <Lik href="/Aboutus">About Us</Lik>
         <Lik href="/ContactUs">Contact Us</Lik>
       </Div3>
     </MainDiv>

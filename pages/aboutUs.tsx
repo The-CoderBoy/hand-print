@@ -4,7 +4,7 @@ import Heading from "@/components/Heading";
 import { kadwa } from "@/utils/font";
 import { useEffect, useState } from "react";
 
-function aboutUs() {
+function AboutUs() {
   const [height, setHeight] = useState("");
   useEffect(() => {
     console.log(window.innerHeight);
@@ -54,4 +54,4 @@ function aboutUs() {
   );
 }
 
-export default aboutUs;
+export default AboutUs;

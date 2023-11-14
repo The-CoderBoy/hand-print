@@ -78,7 +78,7 @@ function Navbar() {
           <Link className={style.link} href="/Awards">
             Awards
           </Link>
-          <Link className={style.link} href="/aboutUs">
+          <Link className={style.link} href="/Aboutus">
             About Us
           </Link>
           <Link className={style.link} href="/ContactUs">
@@ -152,7 +152,7 @@ function Navbar() {
             <br />
             <Link
               className={style.link}
-              href="/aboutUs"
+              href="/Aboutus"
               onClick={() => setMenu(false)}
             >
               About Us
