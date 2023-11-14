@@ -29,7 +29,7 @@ const P = styled.p`
     text-align: center;
   }
   @media (max-width: 400px) {
-    font-size: 15px;
+    font-size: 18px;
   }
 `;
 

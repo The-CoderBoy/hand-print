@@ -78,9 +78,9 @@ function Footer() {
               color: "#DDD3A0",
               marginLeft: "15px",
             }}
-            href="mailto:testMail@gmail.com"
+            href="mailto:handprintakola@gmail.com"
           >
-            testMail@gmail.com
+            handprintakola@gmail.com
           </a>
         </div>
         <div>
@@ -93,19 +93,19 @@ function Footer() {
       </Div1>
       <Div2>
         <a
-          style={{ color: "#ddd3a0", marginTop: "-12px" }}
+          style={{ color: "#ddd3a0", height: "65px" }}
           href="https://wa.me/+919571306863"
         >
           <BsWhatsapp />
         </a>
         <a
-          style={{ color: "#ddd3a0", marginTop: "-12px" }}
+          style={{ color: "#ddd3a0", height: "65px" }}
           href="https://m.facebook.com/profile.php?id=100054877175179&v=info&funlid=7ysiefpw3kiCcemw"
         >
           <BsFacebook />
         </a>
         <a
-          style={{ color: "#ddd3a0", marginTop: "-12px" }}
+          style={{ color: "#ddd3a0", height: "65px" }}
           href="https://instagram.com/govindhandprints?igshid=NTFqd2toNDFmY3Zz"
         >
           <BsInstagram />

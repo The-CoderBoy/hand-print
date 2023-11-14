@@ -2,8 +2,15 @@ import React from "react";
 import style from "@/styles/AboutUs.module.css";
 import Heading from "@/components/Heading";
 import { kadwa } from "@/utils/font";
+import { useEffect, useState } from "react";
 
 function aboutUs() {
+  const [height, setHeight] = useState("");
+  useEffect(() => {
+    console.log(window.innerHeight);
+    setHeight((+window.innerHeight - 800).toString());
+  }, []);
+
   return (
     <div className={style.contaner}>
       <Heading head="About Us" />
@@ -41,8 +48,8 @@ function aboutUs() {
         Delhi, Chennai, Mumbai, Jaipur, Bangalore, Hyderabad, and Kolkata, and
         we export around the world.
       </div>
-      
-      <div style={{ marginTop: "15px" }}></div>
+
+      <div  style={{ height: `${height}px` }}></div>
     </div>
   );
 }

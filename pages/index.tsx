@@ -5,6 +5,7 @@ import Heading from "@/components/Heading";
 import ProductCard from "@/components/ProductCard";
 import ImgComp from "@/components/ImgComp";
 import Link from "next/link";
+import Head from "next/head";
 
 const cardData = [
   {

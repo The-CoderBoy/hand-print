@@ -13,6 +13,16 @@
   font-size: 17px;
 }
 
+.imgDiv {
+  margin: auto;
+  margin-top: 15px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 @media screen and (max-width: 1180px) {
   .contaner {
     margin-top: 50px;
@@ -21,14 +31,21 @@
   .para {
     width: 90%;
   }
+  .imgDiv {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .contaner {
     margin-top: 20px;
     width: 90%;
   }
   .para {
     width: 100%;
+  }
+  .imgDiv {
+    width: 100%;
+    justify-content: center;
   }
 }

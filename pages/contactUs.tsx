@@ -47,9 +47,9 @@ function ContactUs() {
               textDecoration: "none",
               color: "#907b0f",
             }}
-            href="mailto:testMail@gmail.com"
+            href="mailto:handprintakola@gmail.com"
           >
-            testMail@gmail.com
+            handprintakola@gmail.com
           </a>
         </div>
       </div>

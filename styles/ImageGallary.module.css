@@ -24,12 +24,12 @@
 }
 
 @media screen and (max-width: 700px) {
-    .contaner {
-      margin-top: 20px;
-      width: 90%;
-    }
-    .imgDiv {
-      width: 100%;
-      justify-content: center;
-    }
+  .contaner {
+    margin-top: 20px;
+    width: 90%;
   }
+  .imgDiv {
+    width: 100%;
+    justify-content: center;
+  }
+}

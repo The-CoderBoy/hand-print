@@ -3,6 +3,7 @@ import React from "react";
 import style from "@/styles/Award.module.css";
 import Heading from "@/components/Heading";
 import { kadwa } from "@/utils/font";
+import ImgComp from "@/components/ImgComp";
 
 const awardData = [
   {
@@ -24,6 +25,12 @@ const awardData = [
   },
 
   {
+    org: "District administration, Chittorgarh",
+    date: "26-January-2020",
+    dis: "award on Republic Day for participation in project Utpal, organised by Lady Bamford Foundation and conducting workshops in Banasthali Vidyapith for natural colour Akola print",
+  },
+
+  {
     org: "District Industries & Commerce Center, Udaipur",
     date: "17-February-2023",
     dis: "Certification for participation and successful completion of training programmes on divisional level orientation and awareness programmes on cluster development for hand printing by the Rajasthan government",
@@ -35,15 +42,36 @@ const awardData = [
   },
 ];
 
+const imgData = [
+  {
+    src: "/image/award 1.jpg",
+    alt: "govind hand print akola rajasthan",
+  },
+  {
+    src: "/image/award.jpg",
+    alt: "govind hand print akola rajasthan",
+  },
+];
+
 function Awards() {
   return (
     <div className={style.contaner}>
       <Heading head="Awards and Certificates" />
 
+      <div className={style.imgDiv}>
+        {imgData.map((x, i) => {
+          return (
+            <div key={i}>
+              <ImgComp src={x.src} alt={x.alt} />
+            </div>
+          );
+        })}
+      </div>
+
       <div className={`${kadwa.className} ${style.para}`}>
         Our work and art have been acknowledged by so many organisations over
         the years. This appreciation gives us motivation to do hard work in
-        carpentry.
+        craftsmanship.
       </div>
 
       {awardData.map((x, i) => {
