@@ -14,7 +14,7 @@ const cardData = [
     alt: "dabu print running frabric",
     cardColor: "#673c7cab",
     textColor: "#EBB5FF",
-    text: "Runnig Fabric",
+    text: "Running Fabric",
   },
   {
     link: "saree",
