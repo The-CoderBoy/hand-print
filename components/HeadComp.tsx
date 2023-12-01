@@ -17,6 +17,7 @@ function HeadComp() {
           property="og:description"
           content="We are a producer and manufacturer of Dabu print fabric. We dabu print on cotton, silk fabric, and other fabrics. We do natural colour dying on running fabric, bedsheets, sarees, and salwarsuits."
         />
+        <meta name="google-site-verification" content="3bkZqHuwNig6Thb_mkshuEEbMZFO1zwol6x7snmiheI" />
         {/* <meta property="og:image" content="/image/banner500x300.jpg" /> */}
       </Head>
     </>
